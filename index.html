@@ -43,7 +43,7 @@
 <meta property="og:site_name" content="동성금형열처리">
 <meta property="og:title" content="동성금형열처리 | 시화공단 금형 진공열처리 42년 전문기업">
 <meta property="og:description" content="압출·단조 금형 열처리 전문기업 ㈜동성금형열처리. FULL AUTO 진공로 4기, 템퍼링로 10기, GAS질화로 5기 보유. 1983년 창업 42년 노하우. ☎ 031-499-7071">
-<meta property="og:image" content="https://www.dongsungmht.co.kr/og_dongsung.jpg">
+<meta property="og:image" content="https://money.kgindustrynews.com/jiwonjam/og_image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="동성금형열처리 공장 전경 - 시화공단 금형 진공열처리">
@@ -54,7 +54,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="동성금형열처리 | 시화공단 금형 진공열처리 42년 전문기업">
 <meta name="twitter:description" content="1983년 창업, 42년 경력. 압출·단조 금형 열처리 전문. 시흥시 시화공단. ☎ 031-499-7071">
-<meta name="twitter:image" content="https://www.dongsungmht.co.kr/og_dongsung.jpg">
+<meta name="twitter:image" content="https://money.kgindustrynews.com/jiwonjam/og_image.jpg">
 
 <!-- ====================================================
      ④ 구조화 데이터 (JSON-LD) - 구글·네이버 검색 결과 강화
@@ -70,8 +70,8 @@
       "alternateName": ["㈜동성금형열처리", "DONGSUNG Heat Treatment Co., Ltd."],
       "description": "1983년 창업 42년 경력의 압출·단조 금형 진공열처리 전문기업. FULL AUTO SYSTEM 진공로 4기, 템퍼링로 10기, GAS질화로 5기 보유.",
       "url": "https://money.kgindustrynews.com/jiwonjam/dongsung-new.html",
-      "logo": "https://www.dongsungmht.co.kr/og_dongsung.jpg",
-      "image": "https://www.dongsungmht.co.kr/og_dongsung.jpg",
+      "logo": "https://money.kgindustrynews.com/jiwonjam/og_image.jpg",
+      "image": "https://money.kgindustrynews.com/jiwonjam/og_image.jpg",
       "telephone": "031-499-7071",
       "foundingDate": "1983",
       "numberOfEmployees": {"@type": "QuantitativeValue", "value": 19},
@@ -740,13 +740,19 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:4rem 6% 2.2rem}
           </div>
         </div>
       </div>
-      <div class="cfm rev d1">
-        <div class="fg"><label>성함 / 회사명</label><input type="text" class="finp" placeholder="이름 또는 회사명"></div>
-        <div class="fg"><label>연락처</label><input type="text" class="finp" placeholder="010-0000-0000"></div>
-        <div class="fg"><label>열처리 품목</label><input type="text" class="finp" placeholder="예: SKD61 압출 금형 진공열처리"></div>
-        <div class="fg"><label>문의 내용</label><textarea class="finp ftarea" placeholder="열처리 공정, 수량, 납기 등을 자세히 적어주세요"></textarea></div>
-        <button class="csend" id="E_csend" onclick="alert('문의가 접수되었습니다.\n빠른 시일 내 연락드리겠습니다.\n☎ 031-499-7071')">문의 보내기</button>
-      </div>
+      <form class="cfm rev d1" action="https://formsubmit.co/dongsung1026@hanmail.net" method="POST">
+        <!-- FormSubmit 설정 -->
+        <input type="hidden" name="_subject" value="[동성금형열처리] 홈페이지 문의가 접수되었습니다">
+        <input type="hidden" name="_next" value="https://www.dongsungmht.co.kr/#contact">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <!-- 입력 필드 -->
+        <div class="fg"><label>성함 / 회사명</label><input type="text" name="성함_회사명" class="finp" placeholder="이름 또는 회사명" required></div>
+        <div class="fg"><label>연락처</label><input type="text" name="연락처" class="finp" placeholder="010-0000-0000" required></div>
+        <div class="fg"><label>열처리 품목</label><input type="text" name="열처리_품목" class="finp" placeholder="예: SKD61 압출 금형 진공열처리"></div>
+        <div class="fg"><label>문의 내용</label><textarea name="문의_내용" class="finp ftarea" placeholder="열처리 공정, 수량, 납기 등을 자세히 적어주세요"></textarea></div>
+        <button type="submit" class="csend" id="E_csend">문의 보내기</button>
+      </form>
     </div>
   </div>
 </section>
